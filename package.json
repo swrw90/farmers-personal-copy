@@ -1,0 +1,30 @@
+{
+  "name": "slc-farmers-market-app",
+  "version": "1.0.0",
+  "description": "To connect consumers with local venders at the farmers market.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-jwt": "^5.3.0",
+    "jsonwebtoken": "^7.4.1",
+    "mongoose": "^4.10.7",
+    "morgan": "^1.8.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swrw90/slc-farmers-market-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swrw90/slc-farmers-market-app/issues"
+  },
+  "homepage": "https://github.com/swrw90/slc-farmers-market-app#readme"
+}

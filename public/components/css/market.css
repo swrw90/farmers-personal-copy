@@ -1,0 +1,215 @@
+								.carousel-inner {
+								    width: 100%;
+								    height: 600px;
+								}
+
+								.carousel-inner>.item>img {
+								    width: 100%;
+								    height: :430px!important;
+								}
+
+								body {
+								    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+								    background: url('http://img.freepik.com/fotos-gratis/placas-com-fundo-desfocado_1253-55.jpg?size=338&ext=jpg') no-repeat center center fixed;
+								    -webkit-background-size: cover;
+								    -moz-background-size: cover;
+								    background-size: cover;
+								    -o-background-size: cover;
+								}
+
+								.box {
+								    margin-bottom: 20px;
+								    padding: 30px 15px;
+								    background: white;
+								    background: hsla rgba(255, 255, 255, 0.9);
+								}
+
+								.navbar-nav {
+								    text-transform: uppercase;
+								    font-weight: 400;
+								    letter-spacing: 3px;
+								}
+
+								.navbar {
+								    border-radius: 0;
+								    min-height: 0;
+								}
+
+								.navbar-header {
+								    display: none;
+								}
+
+								.navbar-default {
+								    border: none;
+								    background: white;
+								}
+
+								.nav>li>a {
+								    padding: 35px;
+								}
+
+								.navbar-nav>li>a {
+								    line-height: normal;
+								}
+
+								.navbar-nav {
+								    display: table;
+								    float: none;
+								    margin: 0 auto;
+								    table-layout: fixed;
+								    font-size: 1.25em;
+								}
+
+								.navbar-brand {
+								    font-family: cursive;
+								    color: green !important;
+								    font-size: 25px;
+								    margin-top: 1%;
+								}
+
+								.img-responsive img-border img-left {
+								    width: 100% !important;
+								}
+
+								#farmers {
+								    width: 50%;
+								    height: auto;
+								    float: left;
+								    margin: 10px;
+								}
+
+								footer {
+								    color: white;
+								}
+
+								.vendorBox {
+								    text-align: center;
+								    background-color: white;
+								    padding-left: -20px;
+								}
+
+								.thumbnail {
+								    height: 410px;
+								    width: 360px;
+								    text-align: center;
+								}
+
+								.search-results {
+								    font-size: 20px;
+								    text-align: left;
+								    text-decoration: none;
+								    color: black;
+								}
+
+								.category {
+								    font-family: cursive;
+								    color: green;
+								    font-size: 35px;
+								}
+
+								.produce-name {
+								    font-family: cursive;
+								    color: green;
+								    font-size: 25px;
+								}
+								/*MOBILE RESPONSIVE*/
+
+								@media all and (min-width: 0px) and (max-width: 480px) {
+								    .navbar-brand {
+								        font-size: 15px;
+								        margin-top: 0%;
+								    }
+								    .carousel-inner {
+								        width: 100%;
+								        height: 173px;
+								    }
+								    .img-resize {
+								        /*vertical-align: middle;*/
+								        text-align: center;
+								        margin: 0 auto;
+								        width: 100%;
+								        height: 125px;
+								        padding-bottom: 5%;
+								    }
+								    .nav>li>a {
+								        padding: -1px;
+								    }
+								    .navbar,
+								    .navbar-inverse {
+								        border-radius: 0;
+								        border: none;
+								        margin-bottom: 0;
+								        min-height: 50px;
+								    }
+								    .navbar-nav {
+								        width: 160px;
+								        display: table;
+								        float: none;
+								        margin: 0 auto;
+								        padding: none;
+								        table-layout: fixed;
+								        font-size: 1.25em;
+								    }
+								    .navbar-inverse .navbar-toggle:hover,
+								    .navbar-inverse .navbar-toggle:focus {
+								        background-color: #fff;
+								    }
+								    Í
+								}
+
+								*/ .navbar-inverse .navbar-nav>li>a {
+								    font-size: .7em;
+								    font-weight: 300;
+								    padding: 30px 25px 33px 25px;
+								}
+
+								.navbar-inverse .navbar-nav li a:hover {
+								    background-color: green;
+								    transition: 0.7s all linear;
+								}
+
+								.navbar-default .navbar-toggle .icon-bar {
+								    background-color: #888;
+								}
+
+								.navbar-toggle {
+								    position: relative;
+								    float: right;
+								    padding: 3px 6px;
+								    margin-top: 10px;
+								    margin-right: 0px;
+								    margin-bottom: -50px;
+								    background-color: transparent;
+								    background-image: none;
+								    border: 1px solid transparent;
+								    border-radius: 4px;
+								}
+
+								.navbar-toggle .icon-bar {
+								    display: block;
+								    width: 14px;
+								    height: 2px;
+								    border-radius: 1px;
+								}
+
+								.sr-only {
+								    position: absolute;
+								    width: 1px;
+								    height: 1px;
+								    padding: 0;
+								    margin: -1px;
+								    overflow: hidden;
+								    clip: rect(0, 0, 0, 0);
+								    border: 0;
+								}
+
+								.navbar-inverse .navbar-collapse,
+								.navbar-inverse .navbar-form {
+								    border-color: #fff;
+								}
+
+								.navbar-inverse .navbar-nav>li>a:hover,
+								.navbar-inverse .navbar-nav>li>a:focus {
+								    color: #29841e;
+								    background-color: transparent;
+								}

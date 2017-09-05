@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" ng-app="BuyLocalApp">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Utah Farmers Market</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!--crossorigin="anonymous">-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link href="components/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+	<link href="components/css/market.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-inverse navbar-static-top" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<!--<!--<div class="navbar-header">-->
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+			<!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+		</div>
+		<center><a class="navbar-brand" href="/#/home">Farmers Market</a></center>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<center>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav" id="menu">
+					<li>
+						<a class "nav-links" data-toggle="collapse" data-target=".navbar-collapse.in" href="/#/home">Home</a>
+					</li>
+					<li>
+						<a class "nav-links" data-toggle="collapse" data-target=".navbar-collapse.in" href="/#/about">About </a>
+
+					</li>
+					<li>
+						<a class "nav-links" data-toggle="collapse" data-target=".navbar-collapse.in" href="/#/vendors">Vendors</a>
+					</li>
+					<li>
+						<a class "nav-links" data-toggle="collapse" data-target=".navbar-collapse.in" href="/#/login">Log in</a>
+					</li>
+					<li>
+						<a class "nav-links" data-toggle="collapse" data-target=".navbar-collapse.in" href="/#/signup">Sign Up</a>
+					</li>
+				</ul>
+			</div>
+		</center>
+		<!-- /.navbar-collapse -->
+
+		</div>
+		<!-- /.container -->
+	</nav>
+
+	<ng-view></ng-view>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<p>Copyright &copy; 2017</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!--    Libraries-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.11/ngStorage.js"></script>
+	<!--    Libraries-->
+
+
+
+	<!--Main App-->
+	<script src="app.js"></script>
+	<script src="components/auth/auth.js"></script>
+	<!--Components-->
+	<script src="components/auth/login/login.js"></script>
+	<script src="components/auth/signup/signup.js"></script>
+	<script src="components/auth/logout/logout.js"></script>
+	<script src="components/vendor/vendorCtrl.js"></script>
+	<script src="components/vendors/vendors.js"></script>
+	<script src="components/services/infoReqServ.js"></script>
+
+
+</body>
+
+</html>

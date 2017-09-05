@@ -1,0 +1,14 @@
+<div class="col-md-4 col-md-offset-4">
+  <form>
+    <div class="form-group">
+
+      <center>
+        <h1>Search Vendors</h1>
+      </center>
+      <input class="w3-input w3-border w3-round-large" type="search" ng-model="vendorInput" ng-keydown="fetchVendor(vendor)">
+      <div ng-repeat="vendor in vendors | filter:vendorInput track by $index">
+        <a class="search-results" ng-href="#/vendor/{{vendor._id}}">{{vendor.name}}</a>
+      </div>
+    </div>
+  </form>
+</div>

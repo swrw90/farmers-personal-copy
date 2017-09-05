@@ -1,0 +1,59 @@
+<div class="container vendorBox">
+  <div class="col-md-6 col-md-offset-3">
+    <h1> {{vendorInfo.name}} </h1>
+    <p> Owner: {{vendorInfo.owner }}</p>
+    <p> Email: {{vendorInfo.email}}</p>
+  </div>
+  <div class="col-md-8 col-md-offset-2">
+    <p> {{vendorInfo.summary}}</p>
+    <h3 class="category"> {{vendorInfo.produce["0"].category}}</h3>
+
+  </div>
+
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src={{vendorInfo.produce[0].imgUrl}} alt="" style="width:100%">
+      <h3 class="produce-name">{{vendorInfo.produce[0].name}}</h3>
+
+    </div>
+    <div class="w3-quarter">
+      <img src={{vendorInfo.produce[1].imgUrl}} alt="" style="width:100%">
+      <h3 class="produce-name">{{vendorInfo.produce[1].name}}</h3>
+    </div>
+    <div class="w3-quarter">
+      <img src={{vendorInfo.produce[2].imgUrl}} alt="" style="width:100%">
+      <h3 class="produce-name">{{vendorInfo.produce[2].name}}</h3>
+    </div>
+    <div class="w3-quarter">
+      <img src={{vendorInfo.produce[3].imgUrl}} alt="" style="width:100%">
+      <h3 class="produce-name">{{vendorInfo.produce[3].name}}</h3>
+    </div>
+  </div>
+
+
+  <div class="col-md-8 col-md-offset-2">
+    <h3 class="category"> {{vendorInfo.produce[4].category}}</h3>
+
+  </div>
+
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src={{vendorInfo.produce[4].imgUrl}} alt="" style="width:100%">
+      <h3 class="produce-name">{{vendorInfo.produce[4].name}}</h3>
+
+    </div>
+    <div class="w3-quarter">
+      <img src={{vendorInfo.produce[5].imgUrl}} alt="" style="width:100%">
+      <h3 class="produce-name">{{vendorInfo.produce[5].name}}</h3>
+    </div>
+    <div class="w3-quarter">
+      <img src={{vendorInfo.produce[6].imgUrl}} alt="" style="width:100%">
+      <h3 class="produce-name">{{vendorInfo.produce[6].name}}</h3>
+    </div>
+    <div class="w3-quarter">
+      <img src={{vendorInfo.produce[7].imgUrl}} alt="" style="width:100%">
+      <h3 class="produce-name">{{vendorInfo.produce[7].name}}</h3>
+    </div>
+  </div>
+
+</div>
