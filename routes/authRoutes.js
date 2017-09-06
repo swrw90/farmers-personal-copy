@@ -34,7 +34,7 @@ authRoutes.post("/login", function (req, res) {
                 message: "Email or password is incorrect"
             });
         }
-        var token = jwt.sign(existingUser[0].toObject(), config.secret);
+        var token = jwt.sign(existingUser[0].toObject(), process.env.SECRET);
         return res.send({
             token: token,
             user: existingUser[0].toObject(),

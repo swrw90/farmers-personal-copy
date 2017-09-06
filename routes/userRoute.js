@@ -35,7 +35,7 @@ userAuthRoute.post("/login", function (req, res) {
 		if (!existingUser.length || existingUser[0].password != req.body.password) {
 			return res.status(401).send({ success: false, message: "Email or password is incorrect" });
 		}
-		var token = jwt.sign(existingUser[0].toObject(), config.secret);
+		var token = jwt.sign(existingUser[0].toObject(), process.env.SECRET);
 		return res.send({ token: token, user: existingUser[0].toObject(), success: true, message: "I hope we recieve a token from this!" })
 	})
 });
