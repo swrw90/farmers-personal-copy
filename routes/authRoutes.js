@@ -2,7 +2,6 @@ var express = require("express");
 var authRoutes = express.Router();
 var User = require("../models/user");
 var jwt = require("jsonwebtoken");
-var config = require("../config");
 
 authRoutes.post("/signup", function (req, res) {
     User.find({
