@@ -6,7 +6,9 @@ var morgan = require("morgan");
 var port = process.env.PORT || 8000;
 var expressJwt = require("express-jwt");
 var path = require("path");
-var config = require("./config");
+require('dotenv').config();
+
+
 
 app.use("/api", expressJwt({
 	secret: config.secret
@@ -20,13 +22,13 @@ app.use("/api/vendor", require("./routes/vendorRoute"));
 app.use("/auth", require("./routes/authRoutes"));
 
 app.use("/api", expressJwt({
-	secret: config.secret
+	secret: process.env.SECRET
 }));
 
 //mongoose.connect('mongodb://localhost/market');
 // mongoose.connect("mongodb://localhost/vendor", function (err)
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/shopping', function (err) {
+mongoose.connect(process.env.MONGODB_URI || process.env.DATABASE, function (err) {
 	if(err) throw err;
 	console.log("connected to the database");
 });
