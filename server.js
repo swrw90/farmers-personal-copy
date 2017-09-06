@@ -24,7 +24,9 @@ app.use("/api", expressJwt({
 }));
 
 //mongoose.connect('mongodb://localhost/market');
-mongoose.connect("mongodb://localhost/vendor", function (err) {
+// mongoose.connect("mongodb://localhost/vendor", function (err)
+
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/shopping', function (err) {
 	if(err) throw err;
 	console.log("connected to the database");
 });
